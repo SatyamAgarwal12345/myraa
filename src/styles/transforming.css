@@ -1,0 +1,79 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #002147;
+    text-align: center;
+  }
+  
+  .container {
+    height: 320px;
+    padding: 20px;
+    background-image: url('../assets/images/bg.png');
+  }
+  
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+    color: #444;
+  }
+  
+  .industries {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .industry {
+    text-align: center;
+  }
+  
+  .industry img {
+    width: 163px;
+    height: 160px;
+    padding: 10px;
+  }
+  
+  .industry p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .nav-btn {
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: 1px solid #002147;
+    padding: 10px;
+    cursor: pointer;
+    width: 50px;
+  }
+  
+  .nav-btn:hover {
+    background-color: #002147;
+    color: white;
+  }
+  
+  .nav-btn:focus {
+    outline: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .industries {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+    .industry img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  

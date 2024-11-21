@@ -1,0 +1,145 @@
+/* -------------------------------------------Myraa Styling---------------------------------------------- */
+.myraa-section {
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+    justify-content: space-between;
+    padding: 50px 20px; /* Adjust padding for smaller screens */
+    background: #edf2f6;
+    overflow: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  .content {
+    flex: 1;
+    max-width: 50%; /* Half the width for larger screens */
+    padding: 0 20px; /* Adjust padding for responsiveness */
+  }
+  
+  .content h2 {
+    font-size: 2.5rem;
+    color: #11254a;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #6c7a8d;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: #c03424;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #a8281e;
+  }
+  
+  /* Circle grid styling */
+  .circles {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow circles to wrap on smaller screens */
+    gap: 20px; /* Add space between circles */
+    margin-top: 30px; /* Add spacing for smaller screens */
+  }
+  
+  .circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    background: #c03424;
+  }
+  
+  .circle img {
+    max-width: 50%;
+    margin-bottom: 10px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 1024px) {
+    .myraa-section {
+      flex-wrap: wrap; /* Stack items vertically on smaller screens */
+    }
+  
+    .content {
+      max-width: 100%; /* Full width for text content */
+      text-align: center; /* Center-align text */
+      margin-bottom: 30px; /* Add spacing between text and circles */
+    }
+  
+    .circles {
+      justify-content: center; /* Center-align circles */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .content h2 {
+      font-size: 2rem; /* Reduce font size for headings */
+    }
+  
+    .subtitle {
+      font-size: 1rem; /* Adjust subtitle font size */
+    }
+  
+    .description {
+      font-size: 0.9rem;
+    }
+  
+    .circle {
+      width: 120px; /* Smaller size for circles */
+      height: 120px;
+      padding: 15px;
+    }
+  
+    .circle img {
+      max-width: 40%; /* Reduce image size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content {
+      padding: 0 10px; /* Reduce padding for smaller screens */
+    }
+  
+    .content h2 {
+      font-size: 1.8rem; /* Adjust heading size */
+    }
+  
+    .description {
+      font-size: 0.85rem;
+    }
+  
+    .circle {
+      width: 100px;
+      height: 100px;
+      padding: 10px;
+    }
+  
+    .circle img {
+      max-width: 30%; /* Smaller images */
+    }
+  }
+  

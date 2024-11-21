@@ -1,0 +1,99 @@
+/* ---------------------------------------------Banner Styling---------------------------------------------*/
+.banner {
+  background-image: url("../assets/Banner/banner.png"); /* Replace with actual image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+.banner-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: Barlow Condensed;
+}
+
+.banner-content p {
+  margin-bottom: 20px;
+  font-family: poppins;
+  color: white;
+}
+
+.banner-content button {
+  background: transparent; /* Transparent background */
+  border: 2px solid white; /* Keeps the border white */
+  padding-left: 24px;
+  cursor: pointer;
+  width: 209px;
+  height: 52px;
+  text-align: left; /* Aligns the text within the button */
+}
+
+.banner-content button a {
+  text-decoration: none;
+  color: white;
+}
+.bannner-button {
+  position: relative;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.bannner-button a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+}
+
+/* Red box with blurred background */
+.arrow-box {
+  width: 46px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin-left: 21px;
+  background: transparent;
+}
+
+/* Arrow inside the red box */
+.arrow {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #fff;
+  border-top: 2px solid #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  z-index: 1;
+}
+
+/* Transparent blur effect for the rest of the background */
+.arrow-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+
+  z-index: 0;
+  backdrop-filter: blur(8px); /* Strong blur effect for the background */
+  -webkit-backdrop-filter: blur(8px);
+}
+
+

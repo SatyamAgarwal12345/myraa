@@ -1,0 +1,73 @@
+.cta-section {
+    position: relative;
+    height: 200px;
+    background: url('../assets/aspirations.png') no-repeat center center;
+    background-size: cover;
+    margin: 0 auto;
+    width: calc(100% - 200px); /* Adds space on the left and right */
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-100px); /* Overlapping effect */
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: center;
+  }
+  
+  .cta-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Creates space between text and button */
+    width: 100%;
+    padding: 0 50px; /* Adds padding inside the content area */
+    color: white;
+  }
+  
+  .cta-text {
+    text-align: left; /* Aligns text to the left */
+  }
+  
+  .cta-text h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .cta-text p {
+    font-size: 1rem;
+    margin-bottom: 0;
+    color: white;
+  }
+  
+  .cta-button-wrapper {
+    text-align: right; /* Aligns the button to the right */
+  }
+  
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    color: #004080;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .cta-button span {
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 1rem;
+    padding: 4px 8px;
+    background-color: #004080;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  
+  .cta-button:hover {
+    background-color: #004080;
+    color: white;
+  }
+  
+  

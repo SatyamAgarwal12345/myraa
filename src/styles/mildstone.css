@@ -1,0 +1,57 @@
+.milestones {
+    background-image: url("../assets/milestones/milstone_bg.png"); /* Replace with actual image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1142px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    text-align: center;
+    z-index: 10;
+    overflow: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  .cards {
+    padding: 25px 0px;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of images to prevent overflow */
+    justify-content: center;
+    gap: 75px; /* Adjust gap to avoid large space between images */
+  }
+  
+  .cards img {
+    max-width: 100%; /* Ensure images scale correctly */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 300px; /* Adjust image size */
+  }
+  
+  .cards img.second-image {
+    max-width: 50%; /* Ensure it fits the container */
+    height:auto; /* Make the image stretch vertically if needed */
+    object-fit: cover; /* Cover the space without distorting the image */
+  }
+  
+  .banner-content h1 {
+    margin-top: -100px;
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  .banner-content p {
+    font-size: 20px;
+  }
+  
+  .banner-content button a {
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+  }
+  
+  .banner-content button {
+    margin-top: 50px;
+    background-color: red;
+  }
+  

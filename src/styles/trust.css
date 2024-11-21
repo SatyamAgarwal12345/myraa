@@ -1,0 +1,98 @@
+.trust-section {
+    position: relative;
+    width: 100%;
+    height: 789px;
+    background: url("../assets/trust_bg.png") no-repeat bottom center;
+    background-size: cover; /* Ensures the image covers the entire width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: -299;
+  }
+  
+  .trust-container {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #001529;
+    z-index: 1; /* Ensures content is above the background */
+  }
+  
+  .trust-header .quote-icon {
+    margin-bottom: 20px;
+  }
+  
+  .trust-header img {
+    width: 40px; /* Adjust based on your icon's size */
+    height: auto;
+  }
+  
+  .trust-header h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #00254A;
+    font-family: Barlow Condensed;
+  }
+  
+  .trust-header .trust-description {
+    color: #94a8bc;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+  }
+  
+  .trust-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .arrow-button {
+    background-color: transparent;
+    border: 2px solid 00254A;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .arrow-button:hover {
+    background-color: #8aa7cd;
+  }
+  
+  .arrow-button img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain; /* Ensures icons scale properly */
+  }
+  
+  .testimonial {
+    padding: 10px;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .testimonial-text {
+    font-size: 18px;
+    color: #001529;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  
+  .testimonial-author {
+    color: #8aa7cd;
+    font-size: 16px;
+    
+  }
+  
+  .author-name {
+    font-weight: bold;
+    color: #001529;
+  }

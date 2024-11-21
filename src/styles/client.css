@@ -1,0 +1,99 @@
+.clients-section {
+  width: 100%;
+  background-color: #f9fafc; /* Light background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px; /* Add padding for smaller screens */
+}
+
+.clients-container {
+  width: 90%; /* Set a percentage-based width for flexibility */
+  max-width: 1600px; /* Limit maximum width for larger screens */
+  text-align: center;
+}
+
+/* Heading */
+.clients-container h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #00254a;
+  margin-bottom: 10px;
+}
+
+.clients-container p {
+  font-size: 16px;
+  color: #8aa7cd;
+  margin-bottom: 30px;
+}
+
+/* Logo Container */
+.clients-logos {
+  display: flex;
+  flex-wrap: nowrap; /* Do not wrap logos */
+  justify-content: center; /* Center the visible logo */
+  align-items: center;
+  overflow-x: auto; /* Enable horizontal scroll for larger devices */
+  width: 100%; /* Take full width */
+  gap: 20px; /* Add spacing between logos */
+  margin: 0 auto;
+}
+
+.clients-logos img {
+  max-width: 150px; /* Max width for logos on larger screens */
+  max-height: 99px; /* Maintain height ratio */
+  object-fit: contain;
+}
+
+/* Media Queries */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .clients-container h2 {
+    font-size: 30px; /* Smaller font size for tablets */
+  }
+
+  .clients-container p {
+    font-size: 14px;
+  }
+
+  .clients-logos img {
+    max-width: 120px; /* Adjust logo size */
+  }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .clients-logos {
+    flex-wrap: nowrap; /* Ensure only one logo is visible */
+    justify-content: center; /* Center the logo */
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Snap to each logo while scrolling */
+    gap: 0; /* Remove spacing for a cleaner look */
+  }
+
+  .clients-logos img {
+    flex: 0 0 auto; /* Prevent resizing of logos */
+    max-width: 80%; /* Adjust logo width */
+    max-height: auto;
+    margin: 0 auto; /* Center the logo */
+    scroll-snap-align: center; /* Ensure logos snap to the center */
+  }
+}
+
+/* Small Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .clients-container h2 {
+    font-size: 20px; /* Adjust heading size for very small screens */
+  }
+
+  .clients-container p {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  .clients-logos img {
+    max-width: 70%; /* Further reduce logo size for small screens */
+    max-height: auto;
+  }
+}

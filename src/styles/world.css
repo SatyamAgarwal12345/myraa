@@ -1,0 +1,61 @@
+/* ---------------------------------------------worldwide Section Container ---------------------------------------------*/
+.worldwide-section {
+    position: relative;
+    background-image: url("../assets/world_map.png"); /* World map as background */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    color: #001529;
+    overflow: hidden;
+  }
+  
+  /* Top Content */
+  .worldwide-content {
+    margin-top: 50px;
+    text-align: center;
+    color: #001529;
+    z-index: 2;
+  }
+  
+  .worldwide-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .worldwide-content p {
+    font-size: 16px;
+  }
+  
+  /* Left Vertical Text */
+  .map-label {
+    position: absolute;
+    top: 0;
+    left: 2px;
+    font-size: 90px;
+    font-weight: bold;
+    color: rgba(0, 21, 41, 0.1); /* Faded effect */
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    z-index: 1;
+  }
+  
+  /* Map Overlay for Markers */
+  .map-overlay {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Marker Styling */
+  .marker {
+    position: absolute;
+    background-color: #c12b13;
+    color: #ffffff;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
